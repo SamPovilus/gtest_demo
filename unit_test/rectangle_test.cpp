@@ -10,7 +10,7 @@ TEST (RectangleTest, area) {
     EXPECT_EQ (2, testRect->get_area());
 
     testRect->set_height(2);
-    EXPECT_EQ (4, testRect->get_area());]
+    EXPECT_EQ (4, testRect->get_area());
 }
 
 TEST (Rectangle, zero) { 
