@@ -3,3 +3,7 @@ project (hello)
 file(GLOB SOURCES "src/*.cpp")
 include_directories(include)
 add_executable(hello ${SOURCES})
+
+include(GoogleTest)
+add_executable(FooTest "unit_test/rectangle_test.cpp")
+gtest_add_tests(TARGET FooTest)
