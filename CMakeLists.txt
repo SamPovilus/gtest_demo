@@ -5,6 +5,6 @@ include_directories(include)
 add_executable(hello ${SOURCES})
 
 include(GoogleTest)
-add_executable(FooTest "unit_test/rectangle_test.cpp" ${SOURCES})
+add_executable(FooTest "unit_test/rectangle_test.cpp" "src/rectangle.cpp")
 gtest_add_tests(FooTest "" AUTO)
-target_link_libraries(FooTest "/home/spovilus/googletest/lib/libgtest.a")
+target_link_libraries(FooTest "/home/spovilus/googletest/lib/libgtest.a" pthread)
